@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body{background-image:url(img/skill2.jpg);
+}
+#show{COLOR:#000;border:hidden;width:auto;height:60px; background:#FC9; font-SIZE:25px;}
+#con{
+    height:500px;
+	 width:600px;
+    margin:30px;/*设置元素跟其他元素的距离为20像素*/
+    float:right;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+ 	background-image:url(img/ban6666.jpg);
+	
+}
+#Content{
+    height:500px;
+	width:580px;
+    /*此处对容器设置了高度，一般不建议对容器设置高度，一般使用overflow:auto;属性设置容器根据内容自适应高度，如果不指定高度或不设置自适应高度，容器将默认为1个字符高度，容器下方的布局元素（footer）设置margin-top:属性将无效*/
+    margin-top:30px;
+	background:#C96;
+	font-size:24px;
+	
+	float:left;
+}
+
+
+#Footer{
+    height:80px;
+    background:#FC9;
+    margin-top:20px;
+	font-size:25px;
+}
+.Clear{
+    clear:both;
+}
+
+
+</style>
+</head>
+
+<body>
+ <div id="show"></div>
+<script type="text/javascript">
+var str="说说有关梦想这件事：";
+var len=str.length;
+var i=1;
+function showword(){
+document.getElementById("show").innerHTML=str.substr(0,i);
+i++;
+if(i>len){
+clearInterval("done");}
+}
+var done=setInterval("showword()",1000);
+</script>
+<div id="con">
+<span style="font-size:10px;"</span>
+</div>
+<div id="Content">
+       
+       <span style="color:#fff;font-size:30px;">关于我对梦想的理解：</span></p>
+       <p style="color:#FFF;font-size:25px;">&nbsp;&nbsp;&nbsp;&nbsp;
+       每个人都有梦想，小时候大家的梦想不是想当宇航员就是想要考斯坦福，梦想这东西还是要有的万一实现了呢，我没有那么大的志向，我只是单纯的喜欢摄影，感觉可以把很美的东西留下来作为纪念是一件很幸福的事情，每当看着我拍的那些美丽的风景，总觉得大自然中还有很多美丽没有被开发出来，所以特别想要做一名优秀的摄影师，奈何大学专业选了计算机，不过感觉离梦想更近一步了，至少会修图了。
+       
+             </p> 
+    </div>
+    <div class="Clear"><!--如何你上面用到float,下面布局开始前最好清除一下。--></div>
+    <div id="Footer">
+之前在微博上看到一句很火的话：“每天叫醒你的不是闹钟而是梦想”，我觉得这句话说得很是认真。因为有梦想的人每天都有进步。
+
+</div>
+
+
+
+
+</body>
+</html>
